@@ -1155,8 +1155,16 @@ img {
     letter-spacing: 0.04em;
     padding: 8px 24px;
     cursor: pointer;
+    transition: background-color var(--transition);
 
 }
+ 
+.btn-subscribe:hover,
+.btn-subscribe:focus{
+background-color: #404BBF;
+
+}
+
 
 .footer-btn-icon {
     margin-left: 16px;
