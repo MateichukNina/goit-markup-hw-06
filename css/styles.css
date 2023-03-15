@@ -887,7 +887,10 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 72px;
+    padding-bottom: 24px;
 
 
 
@@ -956,7 +959,7 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-top: 48px;
+
     margin-bottom: 16px;
 
 
@@ -1016,13 +1019,13 @@ img {
 
 
 .modal-form-field {
-    margin-top: 8px;
+    margin-bottom: 8px;
     position: relative;
 
 }
 
 .modal-submit-btn {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     align-self: center;
     background-color: var(--accent-color);
@@ -1031,7 +1034,12 @@ img {
     border-color: transparent;
     border-radius: 4px;
     transition: background-color var(--transition);
-    outline: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .modal-submit-btn:hover,
@@ -1061,9 +1069,18 @@ img {
     width: 100%;
     resize: none;
     padding: 8px 16px;
-    margin-bottom: 16px;
+
     transition: border-color var(--transition);
 
+}
+
+.modal-message::placeholder {
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-message:focus {
@@ -1072,12 +1089,10 @@ img {
 
 .modal-person-icon {
     position: absolute;
-    width: 18px;
-    height: 24px;
     bottom: 8px;
     left: 16px;
-    cursor: pointer;
-    padding: 3px 0px;
+
+
     gap: 4px;
     fill: var(--main-font-color);
     transition: fill var(--transition);
@@ -1085,11 +1100,9 @@ img {
 
 .modal-phone-icon {
     position: absolute;
-    width: 18px;
-    height: 24px;
     bottom: 8px;
     left: 16px;
-    cursor: pointer;
+
     gap: 4px;
     fill: var(--main-font-color);
     transition: fill var(--transition);
@@ -1097,14 +1110,24 @@ img {
 
 .modal-email-icon {
     position: absolute;
-    width: 18px;
-    height: 24px;
     bottom: 8px;
     left: 16px;
-    cursor: pointer;
+
     gap: 4px;
     fill: var(--main-font-color);
     transition: fill var(--transition);
+}
+
+
+.privacy-policy {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
 }
 
 /* FOOTER FORM */
@@ -1136,6 +1159,20 @@ img {
     padding-left: 16px;
 }
 
+.footer-input::placeholder {
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+
+
 .btn-subscribe {
     background: var(--accent-color);
     color: #FFFFFF;
@@ -1158,10 +1195,10 @@ img {
     transition: background-color var(--transition);
 
 }
- 
+
 .btn-subscribe:hover,
-.btn-subscribe:focus{
-background-color: #404BBF;
+.btn-subscribe:focus {
+    background-color: #404BBF;
 
 }
 
